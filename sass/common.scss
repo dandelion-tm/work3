@@ -1,0 +1,35 @@
+@import "./base/reset";
+@import "./mixin/mixin";
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 80px;
+    padding-bottom: 70px;
+    @include xl {
+        padding-right: 100px;
+        padding-left: 100px;
+        max-width: 1080px;
+        margin: 0 auto;
+    }
+}
+
+.sectionTitle {
+    // width: 250px;
+    margin: 0 auto 64px;
+    h2 {
+        text-align: center;
+        font-size: 2.6rem;
+        margin-bottom: 20px;
+        @include md {
+            font-size: 3.2rem;
+        }
+    }
+    &__img {
+        width: 250px;
+        margin: 0 auto;
+        @include md {
+            width: 300px;
+        }
+    }
+}

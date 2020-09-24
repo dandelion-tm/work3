@@ -1,0 +1,43 @@
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;
+
+
+@mixin sm {
+  @media (min-width: ($sm)) {
+    @content;
+  }
+}
+@mixin md {
+  @media (min-width: ($md)) {
+    @content;
+  }
+}
+@mixin lg {
+  @media (min-width: ($lg)) {
+    @content;
+  }
+}
+@mixin xl {
+  @media (min-width: ($xl)) {
+    @content;
+  }
+}
+
+@mixin fontBlue {
+  color: #51a2bc;
+}
+
+// -----------btn------------
+@mixin btn-pink {
+  display: block;
+  width: 144px;
+  background-color: #ec84a0;
+  color: #fff;
+  border-radius: 28px;
+  font-size: 1.6rem;
+  font-weight: bold;
+  padding: 14px 0 14px;
+  text-align: center;
+}
